@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".MainActivity"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/logo_border"/>
+///////////////////////////////////////////////////////////////////
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/daily_bus_record"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:text="@string/please_fill_the_options_below"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:onClick="setDate"
+            android:text="@string/set_date"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/background_btn2"/>
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_selected_date_will_appeare_here"
+            android:layout_alignRight="@+id/button1"
+            android:layout_marginTop="12dp" />
+///////////////////////////////////////
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="70dp"
+            android:background="@color/colorDividerSecondary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_your_bus_number"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="12dp" />
+
+        //////////////////////////////////////////////////////////
+
+        <NumberPicker
+            android:id="@+id/Busno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="70dp"
+            android:background="@color/colorDividerSecondary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_type_your_name"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:hint="Name"
+            android:background="@drawable/input_field"
+            android:inputType="text"/>
+//////////////////////////////////////////////////////////////
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="70dp"
+            android:background="@color/colorDividerSecondary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/students"
+            android:textSize="30dp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="20dp" />
+        <EditText
+            android:id="@+id/total"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="-35dp"
+            android:layout_marginLeft="100dp"
+            android:inputType="number"
+            android:hint="20"
+            android:background="@drawable/input_field"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/present"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="12dp" />
+        <EditText
+            android:id="@+id/present"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="-35dp"
+            android:layout_marginLeft="100dp"
+            android:inputType="number"
+            android:hint="15"
+            android:background="@drawable/input_field"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/absent"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="12dp" />
+        <EditText
+            android:id="@+id/absent"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="-35dp"
+            android:layout_marginLeft="100dp"
+            android:inputType="number"
+            android:hint="5"
+            android:background="@drawable/input_field"/>
+
+        ////////////////////////////////////////////////////////
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="70dp"
+            android:background="@color/colorDividerSecondary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/staff"
+            android:textSize="30dp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="12dp" />
+        <EditText
+            android:id="@+id/staff"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:hint="2"
+            android:background="@drawable/input_field"/>
+
+        ///////////////////////////////////////////////////////////
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="70dp"
+            android:background="@color/colorDividerSecondary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reading"
+            android:textSize="30dp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginTop="12dp" />
+        <EditText
+            android:id="@+id/reading"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:hint="20000"
+            android:background="@drawable/input_field"/>
+            ////////////////////////////////////////////////////////
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="70dp"
+                android:background="@color/colorDividerSecondary"/>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="46dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="-175dp"
+                android:layout_marginTop="0dp"
+                tools:ignore="InvalidId" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="35dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_marginTop="-40dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/you_have_filled_the_above_credentials_correctly_and_by_ticking_the_box_you_want_to_submit_the_credentials" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="70dp"
+                android:background="@color/colorDividerSecondary"/>
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@drawable/background_btn"
+                android:text="@string/save"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+</ScrollView>

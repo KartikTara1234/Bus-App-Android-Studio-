@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "525212321951",
+    "project_id": "otp-verification-90092",
+    "storage_bucket": "otp-verification-90092.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525212321951:android:17773600eace50abeffaaa",
+        "android_client_info": {
+          "package_name": "com.kartiktara.busapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525212321951-528arpleforrep1biaqbt512q2j8lhc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kartiktara.busapp",
+            "certificate_hash": "4ff58a417b5780a507bdd437f6775b52a5ba0672"
+          }
+        },
+        {
+          "client_id": "525212321951-gfjbp9ailumgg3966e0lskd395jdfbsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyq7IE-jpbEmJVsVk2o8ERHfT_fvwO50w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525212321951-gfjbp9ailumgg3966e0lskd395jdfbsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
